@@ -8,7 +8,6 @@ body{
   width: 1200px;
   margin: 0 auto;
   position: relative;
-  font-size: 24px;
 }
 
 .container{
@@ -20,10 +19,34 @@ body{
   flex-wrap: wrap;
 }
 
-.load_list{
+
+.h1{
+  text-align: center;
+}
+
+.game_list{
   display: flex;
   flex-wrap: wrap;
 }
+
+.loading_animation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 10px solid grey;
+  border: 10px solid lighgray;    
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+  border-radius: 100%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .game_item{
   height: 150px;
   width: 530px;

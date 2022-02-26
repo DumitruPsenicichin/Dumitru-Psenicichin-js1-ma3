@@ -1,6 +1,6 @@
 const url = 'https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=85e9085d454a45e393e73feec5dd57c5';
 
-const gameList = document.querySelector('.load_list');
+const gameList = document.querySelector('.game_list');
 
 
 async function displayGameList() {
