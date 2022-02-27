@@ -1,69 +1,69 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .container {
-  position: relative;
-  max-width: 1170px;
-  padding: 0 15px 0 15px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  height: 720px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    max-width: 1170px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .game_list {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .loading_animation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 2px solid grey;
-  border: 2px solid lighgray;
-  width: 100px;
-  height: 100px;
-  animation: spin .5s linear infinite;
-  border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid grey;
+    border: 2px solid lighgray;
+    width: 100px;
+    height: 100px;
+    animation: spin .5s linear infinite;
+    border-radius: 50%;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .game_item {
-  height: 150px;
-  width: 530px;
-  border: 1px solid black;
-  padding: 20px;
-  margin: 15px;
-  font-size: 30px;
-  text-align: center;
-  text-align: left;
+    height: 150px;
+    width: 530px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 15px;
+    font-size: 30px;
+    text-align: center;
+    text-align: left;
 
 }
