@@ -38,13 +38,12 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border-top: 10px solid grey;
-  border: 10px solid lighgray;
+  border-top: 2px solid grey;
+  border: 2px solid lighgray;
   width: 100px;
   height: 100px;
-  animation: spin 3s linear infinite;
-  border-radius: 100%;
+  animation: spin .5s linear infinite;
+  border-radius: 50%;
 }
 
 @keyframes spin {
