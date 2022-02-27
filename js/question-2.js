@@ -3,9 +3,9 @@ const url = 'https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=
 const gameList = document.querySelector('.game_list');
 
 
-async function displayGameList() {
+ async function displayGameList() {
+   try{
   const response = await fetch(url);
-
   const games = await response.json();
 
   result = games.results;
@@ -24,13 +24,19 @@ async function displayGameList() {
     gameList.innerHTML += `<div class = game_item>
         ${i + 1}: ${result[i].name}<br>  
         Rating: ${result[i].rating}<br>
-        Number of tags: ${result[i].tags.length}</div><br>`
+        Number of tags: ${result[i].tags.length}</div><br>`;
   }
+ }catch{
+   console.log('Something went wrong...');
+   gameList.innerHTML = 'Something went wrong...';
+ }
 }
 
 displayGameList();
 
-/* Make a call to the Rawg API.
+  
+
+ /* Make a call to the Rawg API.
 
 Go to https://rawg.io/apidocs and get an API key which you’ll use as part of the endpoint you’re making an API call to. You can use https://noroff.no for the URL and Noroff Assignment for the description.
 
